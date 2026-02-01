@@ -620,6 +620,12 @@
             100% { background-position: 100% 50%; }
         }
 
+        /* Shared gradient flow animation */
+        @keyframes gradient-flow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
         /* ============ INFINITY SYMBOL ============ */
         .infinity-container {
             position: absolute;
@@ -725,14 +731,11 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: text-gradient 2s linear infinite;
+            animation: gradient-flow 2s linear infinite;
             font-size: 1.3rem;
         }
 
-        @keyframes text-gradient {
-            0% { background-position: 0% 50%; }
-            100% { background-position: 100% 50%; }
-        }
+
 
         /* ============ COUNTDOWN ============ */
         .countdown-section {
@@ -892,7 +895,7 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            border: 2px solid rgba(255,105,180,0.5);
+            border: 2px solid rgba(255,105,180,0.5);px solid rgba(255,105,180,0.5);
             animation: music-wave 1.5s ease-out infinite;
         }
 
@@ -1153,7 +1156,8 @@
 
     <!-- Background Music -->
     <audio id="bgMusic" loop preload="auto">
-        <source src="cupid.mp3" type="audio/mpeg">
+        <source src="Cupid.mp3" type="audio/mpeg">
+        <source src="./Cupid.mp3" type="audio/mpeg">
     </audio>
 
     <!-- Music Control Button -->
